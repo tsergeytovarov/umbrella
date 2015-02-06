@@ -1,0 +1,92 @@
+.people-item{
+  width: 272px;
+  height: 272px;
+  margin: 0 auto;
+
+  &_image{
+    width: inherit;
+    height: inherit;
+    background: #ccc;
+    overflow: hidden;
+    position: relative;
+
+    img{
+      width: 100%;
+    }
+
+    &:hover{
+      .people-item_on-image{
+        display: block;
+      }
+    }
+  }
+
+  &_on-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background: #f8e72b;
+    box-sizing: border-box;
+    padding: 20px;
+    display: none;
+
+    p{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &_name{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+
+  &_work{
+    margin-top: 5px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+
+.socio{
+  font-size: 0;
+
+  a{
+    display: inline-block;
+    vertical-align: top;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(255,255,255,.3);
+    margin: 0 2px;
+
+    &:hover{
+      background-color: rgba(255,255,255, 0);
+    }
+  }
+
+  &_tw{
+    background-image: url("../img/context/ico-tw.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &_fb{
+    background-image: url("../img/context/ico-fb.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &_gg{
+    background-image: url("../img/context/ico-ggl.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
