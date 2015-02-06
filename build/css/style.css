@@ -1068,20 +1068,6 @@ th
 /*=====================
   Маленькие управляющие классы
 =====================*/
-.inbox
-{
-    /* боксовая модель */
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
-.inline
-{
-    /* inline-block поведение */
-    display: inline-block;
-
-    vertical-align: top;
-}
 .clearfix:after,
 .clearfix:before
 {
@@ -1093,33 +1079,6 @@ th
 .clearfix:after
 {
     clear: both;
-}
-.ico
-{
-    font-size: 0;
-    /* inline-block поведение */
-
-    display: inline-block;
-    /* иконки */
-    /* боксовая модель */
-
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-
-    vertical-align: top;
-    text-indent: -9999px;
-}
-.table
-{
-    /* таличное поведение */
-    display: table;
-}
-.table-cell
-{
-    display: table-cell;
-
-    vertical-align: middle;
 }
 /* контролирующие классы */
 /*=====================
@@ -1210,10 +1169,6 @@ ul li
     height: 698px;
 }
 /* базовая типография */
-/*=====================
-  Цвета
-=====================*/
-/* цвета */
 /*=====================
   Модульная сетка
 =====================*/
@@ -1455,60 +1410,13 @@ input[type='password']:focus
 {
     border: 1px solid #ccc;
 }
-label
-{
-    cursor: pointer;
-}
 button
 {
     cursor: pointer;
 
     outline: none;
 }
-/*=====================
-  Кастомные формы и радио кнопки
-=====================*/
-input[type='checkbox'],
-input[type='radio']
-{
-    display: none;
-
-    margin: 20px;
-}
-input[type='checkbox'] + label input[type='radio'] + label
-{
-    display: inline-block;
-
-    vertical-align: middle;
-}
-input[type='checkbox'] + label::before input[type='radio'] + label::before
-{
-    display: inline-block;
-
-    width: 49px;
-    height: 49px;
-    margin: 0 10px 0 0;
-
-    content: '';
-}
-input[type='checkbox'] + label::before
-{
-    background: url('../img/') no-repeat;
-}
-input[type='radio'] + label::before
-{
-    background: url('../img/') no-repeat;
-}
-input[type='checkbox']:checked + label::before
-{
-    background: url('../img/') no-repeat;
-}
-input[type='radio']:checked + label::before
-{
-    background: url('../img/') no-repeat;
-}
 /* формы */
-/* таблицы */
 /* Проектный слой */
 /*=====================
   Базовый каркас
