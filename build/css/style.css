@@ -1901,6 +1901,15 @@ body
     font-size: 16px;
     line-height: 24px;
 }
+.people-item_on-image .socio
+{
+    position: absolute;
+    bottom: 20px;
+
+    width: 232px;
+
+    text-align: center;
+}
 .people-item_name
 {
     font-size: 16px;
