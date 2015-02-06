@@ -1,12 +1,68 @@
-/*=====================
-  Базовый каркас
-=====================*/
+.main-header{
+  padding-top: 40px;
 
-.wrapper{
+  background: url("../img/context/background-header.jpg") no-repeat center top;
+  background-size: cover;
 
+  &_top{
+    padding: 15px 35px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+  }
+
+  &_middle{
+    margin-top: 130px;
+  }
 }
 
-.container{
-  width: 1000px;
-  margin: 0 auto;
+.logo{
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+
+  i{
+    font-size: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+.main-navigation{
+  font-size: 0;
+
+  a{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: .6;
+    margin-right: 40px;
+    text-decoration: none;
+    color: #282528;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    &.active,
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+.promo-text{
+  margin-top: 80px;
+  margin-bottom: 20px;
+  h1{
+    margin-bottom: 10px;
+  }
+
+  &_description{
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
 }
