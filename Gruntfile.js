@@ -89,9 +89,19 @@ module.exports = function(grunt){
         }]
       }
     },
+
+    watch: {
+      less: {
+        files: ['**/*.less','*.html'],
+        tasks: ['clean', 'copy', 'less' ],
+        options: {
+          spawn: false,
+        },
+      },
+    }
   });
 
-  // proj.registerTask("default",
+  // grunt.registerTask("default",
   //   [
   //     "clean",
   //     "copy",
